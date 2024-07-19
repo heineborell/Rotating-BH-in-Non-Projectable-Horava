@@ -1,0 +1,4 @@
+#The ignore file for Horava project
+#
+#For MAC files
+**.DS_Store
