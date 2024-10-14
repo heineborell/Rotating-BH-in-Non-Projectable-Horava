@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1726742790.74377 "notes.tex" "notes.pdf" "notes" 1726742790.989 0
+["pdflatex"] 1728302404.14312 "notes.tex" "notes.pdf" "notes" 1728302404.45663 0
   "/usr/local/texlive/2024basic/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2024basic/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/local/texlive/2024basic/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -40,11 +40,11 @@
   "/usr/local/texlive/2024basic/texmf-dist/tex/latex/revtex4/revtex4.cls" 1602107563 155496 ec12eec493e76434e49f07d030b4d996 ""
   "/usr/local/texlive/2024basic/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/local/texlive/2024basic/texmf-dist/web2c/texmf.cnf" 1719785820 42007 0b741a3c21a5ca32b40e3846e75b3548 ""
-  "/usr/local/texlive/2024basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1726142097 79187 3707ba1a1c2304ab6bb6cb291e5e6f79 ""
-  "/usr/local/texlive/2024basic/texmf-var/web2c/pdftex/pdflatex.fmt" 1726142110 2629195 a01416d1d6660b0dd7b38187de1a785c ""
+  "/usr/local/texlive/2024basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1726883561 80662 a7a752d4bbc8c4d70a81f9a27729d006 ""
+  "/usr/local/texlive/2024basic/texmf-var/web2c/pdftex/pdflatex.fmt" 1726882814 2629142 7def31bca976376f1992df404363dd4e ""
   "/usr/local/texlive/2024basic/texmf.cnf" 1710011638 628 8b896f7d9d41b43f4346b9091e52171f ""
-  "notes.aux" 1726742790.92074 432 6baa35259b69c1940a6bfa12408353ef "pdflatex"
-  "notes.tex" 1726742789.34745 6210 c90dbd6e61707c3b0747bd04223ca478 ""
+  "notes.aux" 1728302404.39913 432 6baa35259b69c1940a6bfa12408353ef "pdflatex"
+  "notes.tex" 1727677023.3702 6210 c90dbd6e61707c3b0747bd04223ca478 ""
   (generated)
   "notes.aux"
   "notes.log"
