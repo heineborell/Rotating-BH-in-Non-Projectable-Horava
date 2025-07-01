@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1751340088.90714 "notes.tex" "notes.pdf" "notes" 1751340089.20909 0
+["pdflatex"] 1751342526.13153 "notes.tex" "notes.pdf" "notes" 1751342526.45648 0
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -38,7 +38,7 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1750832837 5523539 cbe340ff87ac4cfddcdc6361a84e52ac ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1750832902 3599570 6ee182314de53cdb38892f0488378242 ""
   "/usr/local/texlive/2025/texmf.cnf" 1750832833.53512 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "notes.aux" 1751340089.17839 432 6baa35259b69c1940a6bfa12408353ef "pdflatex"
+  "notes.aux" 1751342526.42439 432 6baa35259b69c1940a6bfa12408353ef "pdflatex"
   "notes.tex" 1750854519.77302 2684 39cdab90924ada2c4c980a5634380c11 ""
   (generated)
   "notes.aux"
