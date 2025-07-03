@@ -1,4 +1,4 @@
-\documentclass[preprint,aps,tightenlines,showkeys,nofootinbib,superscriptaddress]{revtex4}
+\documentclass[preprint,aps,tightenlines,showkeys,nofootinbib,superscriptaddress,amsmath]{revtex4}
 \usepackage{latexsym}
 \usepackage[dvips]{graphicx}
 %  Mu-In's macros
@@ -119,98 +119,163 @@ thermodynamics, Gravitational waves, Lorentz violations}
 \newpage
 
 \section{Introduction}
-So in this section there will be an introduction phase however it
-will take time to write.
-\begin{itemize}
-  \item first one
-  \item second one
-\end{itemize}
 
-\section{Illegitimate transformations}
-In this section we will consider the transformation from Gibbons form
-of GR solution to the Horava-type solution. We start with the Gibbons
-solution given in \cite{Gibb:2004} (with $\lambda = 0$)
-\begin{eqnarray}
-  ds^{2} &= & \left(  -1+\left(\frac{2Mr}{a^{2}+r^{2}-a^{2}\mu ^{2}
-  }\right)\right)dt^2
-  -\frac{4aMr \mu^{2}}{a^{2}+r^{2}-a^2 \mu^2   }dt d
-  \varphi+\frac{a^{2}+r^{2}-a^{2}\mu ^{2}    }{a^{2}-2Mr+r^{2}  }dr^2
-  \nonumber\\
-  & +& \left(a^{2} - \frac{r^{2}}{\mu ^{2}-1 } \right)d \theta ^{2}
-  +\frac{a^2(a^2+r(r-2M))\mu ^{4}-(r^2+a^2)^2 \mu ^2}{a^2(\mu
-  ^2-1)-r^2 }d \varphi ^2
-\end{eqnarray}
-Then we consider the following transformation with the unknown
-function $H(r,\mu )$
-\begin{eqnarray}
-  d \tau  = dt,\quad dR=dr,\quad d \tilde \mu  = d \mu, \quad d
-  \tilde \varphi -H(r,\mu )d \tau = d \varphi,
-\end{eqnarray}
-where $\tau ,R,\tilde \mu , \tilde \varphi $ are the new coordinates.
-The new components of the metric
-function can be found solving the following set
-\begin{eqnarray}
-  g_{t t}-2g_{t \varphi }H(r,\varphi )+g_{\varphi \varphi
-  }H(r,\varphi )^{2}-g_{\tau \tau }&=&0,\\
-  g_{t \varphi }-g_{\varphi  \varphi }-g_{\tau \tilde \varphi }&=&0,
-\end{eqnarray}
-in which the solution is given by (note that the rest of the
-components does not transform)
-\begin{eqnarray}
-  g_{\tau \tau} &=& \frac{{\mu }^2 H \left(H
-      \left(\left(a^2+r^2\right)^2-a^2 {\mu }^2 \left(a^2+r (r-2
-    M)\right)\right)+4 a M r\right)+a^2 \left({\mu }^2-1\right)+r (2
-  M-r)}{r^2-a^2 \left({\mu }^2-1\right)},\\
-  g_{\tau \tilde\varphi} &=&\frac{\mu ^2 \left(H
-      \left(\left(a^2+r^2\right)^2-a^2 \mu ^2 \left(a^2+r (r-2
-  M)\right)\right)+2 a M r\right)}{a^2 \left(\mu ^2-1\right)-r^2}.
-\end{eqnarray}
-In terms of ADM variables this only introduces a change in shift function
-\begin{eqnarray}
-  N_{\phi} = \frac{\mu ^{2}(2aMr+((a^{2}+r^2 )^{2}-a^{2}(a^{2}+(r-2M)
-  )\mu ^{2}   )H) }{a^{2}(\mu^{2}-1 ) r^{2} }.
-\end{eqnarray}
-Using the new metric components in Horava's equations we will have
-PDEs for the function $H(r,\mu )$ which are discussed in mathematica files.
+\section{Illegitimate coordinate transformations}
+We start with giving examples of 'illegitimate' transformation discussed in
+\cite{Martinez:1999qi}. The transformations are illegitimate in the
+sense that does not preserve the properties of the coordinates they
+transform, e.g. periodicity or the range of the variable.
 
-\section{Hocava}
+This way of generating solutions from known ones by a coordinate
+transformation was used before in number of papers
+\cite{Deser:1985pk,Deser:1983tn} but as pointed out in
+\cite{Martinez:1999qi} there is no rationale behind it.
 
-\begin{\eq}
-  S_g &= & \int_{{\bf R} \times \Si_t} dt d^3 x
-  \sqrt{g}N\left[\frac{1}{\kappa}\left(K_{ij}K^{ij}-\lambda
-  K^2\right)+\xi R^{}-2 \La+\f{\sigma}{2} a_i a^i \right]\ ,
-  \label{horava}
-\end{\eq}
-where
-%\begin{\eq}
-$
-K_{ij}=({2N})^{-1}\left(\dot{g}_{ij}-\nabla_i
-N_j-\nabla_jN_i\right)
-$
+The easiest example we can discuss is from \cite{Deser:1985pk} where a
+stationary and axially symmetric metric is given by
+\begin{equation}
+  ds^{2}= dr^{2}+f^{2}(2)d \theta^{2}+2g_{02}(r)dt d\theta +g_{00}(r)dt^{2},
+\end{equation}
+with the components
+\begin{eqnarray}
+  g_{02}& = &A(1-AF)+Fr^{2},\\
+  -g_{00}& =&(1-AF)^{2}-F^{2}r^{2},\\
+  f^{2}(r)&=&r^{2}-A^{2}.
+\end{eqnarray}
+This metric can be cast in Minkowski form under the following transformations
+\begin{eqnarray}
+  \Theta &=&\theta+Ft,\\
+  T &=&t-A\Theta.
+\end{eqnarray}
+These transformations can be called illegitimate as the angular
+variable periodicity is not preserved. Next, we can write down the
+Jacobian for these transformations (transformation from
+$(t,r,\theta)\rightarrow (T,r,\Theta))$
+\begin{eqnarray}
+  \frac{\partial x^{\alpha} }{\partial x^{\prime\mu} }=
+  \begin{pmatrix}
+    1 & 0 & A \\
+    0 & 1 & 0 \\
+    -F & 0 & (1-AF)
+  \end{pmatrix}.
+\end{eqnarray}
+For the sake of simplicity we only give the transformation for the $g_{TT}$ term
+\begin{eqnarray}
+  g_{TT}=g_{tt}+2 \frac{\partial\theta}{\partial T} g_{\theta
+  t}+\left(\frac{\partial\theta}{\partial T}\right)^{2}g_{\theta \theta }=-1,
+\end{eqnarray}
+going over all the metric components it is easy to show that the
+transformed metric is Minkowski
+\begin{equation}
+  ds^{2}=-dT^{2}+ dr^{2}+r^{2}d\Theta^{2}.
+\end{equation}
+\section{Illegitimate non-holonomic transformations}
+The simplest example for our case come from 3 dimensional gravity
+solution called $\text{WAdS}_{3}$ which is a deformation of
+$\text{AdS}_3$. The deformations can be squashing or streching of
+$\text{AdS}_3$. There are several representations of
+$\text{WAdS}_{3}$ and the one we use is from \cite{Giribet:2015lfa}.
+\begin{equation}
+  ds^{2}=\dfrac{l^{2}_K}{4}\left(-\cosh\x d\tau^{2}+dx^{2}+K(dy+\sinh
+  x d\tau )^{2}   \right)
+\end{equation}
+where we have introduced
+\begin{eqnarray}
+  K=\frac{4\nu^{2}}{(\nu ^{2}+3 )},\quad l_{K}^{2}=\frac{4l^{2}
+  }{(\nu ^{2}+3 )},
+\end{eqnarray}
+$\nu =1$ corresponds to locally $AdS_3$ geometries and spaces with
+$\nu ^{2}>1$ is streched $\nu ^{2}<1$ are called squashed
+deformations of $AdS_3$.
+
+Now consider two coordinate systems with
+% \subsection{An Example of relativistic warped ads3}
+% In this section we will consider the transformation from Gibbons form
+% of GR solution to the Horava-type solution. We start with the Gibbons
+% solution given in \cite{Gibb:2004} (with $\lambda = 0$)
+% \begin{eqnarray}
+%   ds^{2} &= & \left(  -1+\left(\frac{2Mr}{a^{2}+r^{2}-a^{2}\mu ^{2}
+%   }\right)\right)dt^2
+%   -\frac{4aMr \mu^{2}}{a^{2}+r^{2}-a^2 \mu^2   }dt d
+%   \varphi+\frac{a^{2}+r^{2}-a^{2}\mu ^{2}    }{a^{2}-2Mr+r^{2}  }dr^2
+%   \nonumber\\
+%   & +& \left(a^{2} - \frac{r^{2}}{\mu ^{2}-1 } \right)d \theta ^{2}
+%   +\frac{a^2(a^2+r(r-2M))\mu ^{4}-(r^2+a^2)^2 \mu ^2}{a^2(\mu
+%   ^2-1)-r^2 }d \varphi ^2
+% \end{eqnarray}
+% Then we consider the following transformation with the unknown
+% function $H(r,\mu )$
+% \begin{eqnarray}
+%   d \tau  = dt,\quad dR=dr,\quad d \tilde \mu  = d \mu, \quad d
+%   \tilde \varphi -H(r,\mu )d \tau = d \varphi,
+% \end{eqnarray}
+% where $\tau ,R,\tilde \mu , \tilde \varphi $ are the new coordinates.
+% The new components of the metric
+% function can be found solving the following set
+% \begin{eqnarray}
+%   g_{t t}-2g_{t \varphi }H(r,\varphi )+g_{\varphi \varphi
+%   }H(r,\varphi )^{2}-g_{\tau \tau }&=&0,\\
+%   g_{t \varphi }-g_{\varphi  \varphi }-g_{\tau \tilde \varphi }&=&0,
+% \end{eqnarray}
+% in which the solution is given by (note that the rest of the
+% components does not transform)
+% \begin{eqnarray}
+%   g_{\tau \tau} &=& \frac{{\mu }^2 H \left(H
+%       \left(\left(a^2+r^2\right)^2-a^2 {\mu }^2 \left(a^2+r (r-2
+%     M)\right)\right)+4 a M r\right)+a^2 \left({\mu }^2-1\right)+r (2
+%   M-r)}{r^2-a^2 \left({\mu }^2-1\right)},\\
+%   g_{\tau \tilde\varphi} &=&\frac{\mu ^2 \left(H
+%       \left(\left(a^2+r^2\right)^2-a^2 \mu ^2 \left(a^2+r (r-2
+%   M)\right)\right)+2 a M r\right)}{a^2 \left(\mu ^2-1\right)-r^2}.
+% \end{eqnarray}
+% In terms of ADM variables this only introduces a change in shift function
+% \begin{eqnarray}
+%   N_{\phi} = \frac{\mu ^{2}(2aMr+((a^{2}+r^2 )^{2}-a^{2}(a^{2}+(r-2M)
+%   )\mu ^{2}   )H) }{a^{2}(\mu^{2}-1 ) r^{2} }.
+% \end{eqnarray}
+% Using the new metric components in Horava's equations we will have
+% PDEs for the function $H(r,\mu )$ which are discussed in mathematica files.
+%
+% \section{Hocava}
+%
+% \begin{\eq}
+%   S_g &= & \int_{{\bf R} \times \Si_t} dt d^3 x
+%   \sqrt{g}N\left[\frac{1}{\kappa}\left(K_{ij}K^{ij}-\lambda
+%   K^2\right)+\xi R^{}-2 \La+\f{\sigma}{2} a_i a^i \right]\ ,
+%   \label{horava}
 % \end{\eq}
-is the extrinsic curvature [the overdot $(\dot{})$ denotes the time
-  derivative and $\nabla_i$ is the covariant derivatives for the
-induced metric $g_{ij}$ on the time-slicing hypersurface $\Si_t$] and
-$R$ is the {\it three}-curvature in the ADM metric
-\begin{\eq}
-  \label{metric}
-  ds^2=-N^2 c^2 dt^2+g_{ij}\left(dx^i+N^i dt\right)\left(dx^j+N^j
-  dt\right),
-\end{\eq}
-respectively. (Hereafter, we shall use the unit $c=1$, unless stated otherwise.)
-The last term in the gravity action (\ref{horava}) is introduced for
-completeness, with the proper acceleration $a_i=\nabla_i ln N$ \cite{Blas:2009}.
-
-\section*{Acknowledgments}
-
-Thanking part.
-
-\appendix
-
-\section{Explicit expressions of $\widehat{\rho}$ and $\widehat{p_a}$ in
-  ${T^{\m}}_{\n (\it{eff})}$
-  %the effective energy-momentum tensor components
-}
+% where
+% %\begin{\eq}
+% $
+% K_{ij}=({2N})^{-1}\left(\dot{g}_{ij}-\nabla_i
+% N_j-\nabla_jN_i\right)
+% $
+% % \end{\eq}
+% is the extrinsic curvature [the overdot $(\dot{})$ denotes the time
+%   derivative and $\nabla_i$ is the covariant derivatives for the
+% induced metric $g_{ij}$ on the time-slicing hypersurface $\Si_t$] and
+% $R$ is the {\it three}-curvature in the ADM metric
+% \begin{\eq}
+%   \label{metric}
+%   ds^2=-N^2 c^2 dt^2+g_{ij}\left(dx^i+N^i dt\right)\left(dx^j+N^j
+%   dt\right),
+% \end{\eq}
+% respectively. (Hereafter, we shall use the unit $c=1$, unless
+% stated otherwise.)
+% The last term in the gravity action (\ref{horava}) is introduced for
+% completeness, with the proper acceleration $a_i=\nabla_i ln N$
+% \cite{Blas:2009}.
+%
+% \section*{Acknowledgments}
+%
+% Thanking part.
+%
+% \appendix
+%
+% \section{Explicit expressions of $\widehat{\rho}$ and $\widehat{p_a}$ in
+%   ${T^{\m}}_{\n (\it{eff})}$
+%   %the effective energy-momentum tensor components
+% }
 
 %%%%%%%%%% References %%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\J}[4]{#1 {\bf #2} #3 (#4)}
@@ -229,6 +294,36 @@ Thanking part.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{thebibliography}{999}
+  %\cite{Giribet:2015lfa}
+  \bibitem{Giribet:2015lfa}
+  G.~Giribet and M.~Tsoukalas,
+  %``Warped-AdS3 black holes with scalar halo,''
+  Phys. Rev. D \textbf{92}, no.6, 064027 (2015)
+  doi:10.1103/PhysRevD.92.064027
+  [arXiv:1506.05336 [gr-qc]].
+  %17 citations counted in INSPIRE as of 03 Jul 2025
+  %\cite{Deser:1983tn}
+  \bibitem{Deser:1983tn}
+  S.~Deser, R.~Jackiw and G.~'t Hooft,
+  %``Three-Dimensional Einstein Gravity: Dynamics of Flat Space,''
+  Annals Phys. \textbf{152}, 220 (1984)
+  doi:10.1016/0003-4916(84)90085-X
+  %1197 citations counted in INSPIRE as of 03 Jul 2025
+  %\cite{Deser:1985pk}
+  \bibitem{Deser:1985pk}
+  S.~Deser and P.~O.~Mazur,
+  %``Static Solutions in $D=3$ Einstein-maxwell Theory,''
+  Class. Quant. Grav. \textbf{2}, L51 (1985)
+  doi:10.1088/0264-9381/2/3/003
+  %46 citations counted in INSPIRE as of 03 Jul 2025
+  %\cite{Martinez:1999qi}
+  \bibitem{Martinez:1999qi}
+  C.~Martinez, C.~Teitelboim and J.~Zanelli,
+  %``Charged rotating black hole in three space-time dimensions,''
+  Phys. Rev. D \textbf{61}, 104013 (2000)
+  doi:10.1103/PhysRevD.61.104013
+  [arXiv:hep-th/9912259 [hep-th]].
+  %324 citations counted in INSPIRE as of 03 Jul 2025
 
   \bibitem{Kerr:1963}
   R.~P.~Kerr,
