@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.25)  3 JUL 2025 19:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.25)  4 JUL 2025 20:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -153,7 +153,11 @@ File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count301
-) (./rotating.aux)
+) (./rotating.aux
+
+LaTeX Warning: Label `warpedads' multiply defined.
+
+)
 \openout1 = `rotating.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
@@ -268,12 +272,35 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 299--306
+./rotating.tex:199: Undefined control sequence.
+<recently read> \x 
+                   
+l.199   ds^{2}=\frac{l^{2}}{4}\left(-\cosh\x
+                                             d\tau^{2}+dx^{2}+(dy+\sinh
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./rotating.tex:204: Undefined control sequence.
+<recently read> \x 
+                   
+l.204   ds^{2}=\dfrac{l^{2}_K}{4}\left(-\cosh\x
+                                                dT^{2}+dX^{2}+K(dY+\sinh
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--332
 []\OT1/cmr/m/n/10.95 G. Giri-bet and M. Tsoukalas, Phys. Rev. D \OT1/cmr/bx/n/10.95 92\OT1/cmr/m/n/10.95 , no.6, 064027 (2015)
  []
 
 
-Underfull \hbox (badness 5908) in paragraph at lines 321--327
+Underfull \hbox (badness 5908) in paragraph at lines 347--353
 []\OT1/cmr/m/n/10.95 C. Mar-tinez, C. Teit-el-boim and J. Zanelli, Phys. Rev. D \OT1/cmr/bx/n/10.95 61\OT1/cmr/m/n/10.95 , 104013 (2000)
  []
 
@@ -282,17 +309,21 @@ Underfull \hbox (badness 5908) in paragraph at lines 321--327
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 3353 strings out of 467886
- 46290 string characters out of 5434045
+ 3354 strings out of 467886
+ 46301 string characters out of 5434045
  466147 words of memory out of 5000000
- 31913 multiletter control sequences out of 15000+600000
+ 31914 multiletter control sequences out of 15000+600000
  633583 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,12n,76p,225b,272s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on rotating.pdf (3 pages, 174609 bytes).
+Output written on rotating.pdf (3 pages, 177009 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream

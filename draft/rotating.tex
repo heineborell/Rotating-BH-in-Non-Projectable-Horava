@@ -170,14 +170,14 @@ transformed metric is Minkowski
   ds^{2}=-dT^{2}+ dr^{2}+r^{2}d\Theta^{2}.
 \end{equation}
 \section{Illegitimate non-holonomic transformations}
-The simplest example for our case come from 3 dimensional gravity
+The simplest example for our case comes from 3 dimensional gravity
 solution called $\text{WAdS}_{3}$ which is a deformation of
 $\text{AdS}_3$. The deformations can be squashing or streching of
 $\text{AdS}_3$. There are several representations of
 $\text{WAdS}_{3}$ and the one we use is from \cite{Giribet:2015lfa}.
 \begin{equation}
   ds^{2}=\dfrac{l^{2}_K}{4}\left(-\cosh\x d\tau^{2}+dx^{2}+K(dy+\sinh
-  x d\tau )^{2}   \right)
+  x d\tau )^{2}   \right)\label{warpedads}
 \end{equation}
 where we have introduced
 \begin{eqnarray}
@@ -188,7 +188,33 @@ $\nu =1$ corresponds to locally $AdS_3$ geometries and spaces with
 $\nu ^{2}>1$ is streched $\nu ^{2}<1$ are called squashed
 deformations of $AdS_3$.
 
-Now consider two coordinate systems with
+Moreover, unlike $AdS_3$, the warped versions are not solutions to
+Einstein gravity in 3 dimensions. To obtain them, one needs to couple matter or
+consider models like Topologically Massive Gravity (TMG) or New
+Massive Gravity (NMG) (higher order derivative theories).
+
+Now consider two coordinate systems with $(\tau,x,y)$ and $(T,X,Y)$.
+The transformation between them will take the the $AdS_3$ metric
+\begin{equation}
+  ds^{2}=\frac{l^{2}}{4}\left(-\cosh\x d\tau^{2}+dx^{2}+(dy+\sinh
+  x d\tau )^{2} \right),
+\end{equation}
+to the one given in (\ref{warpedads})
+\begin{equation}
+  ds^{2}=\dfrac{l^{2}_K}{4}\left(-\cosh\x dT^{2}+dX^{2}+K(dY+\sinh
+  X dT )^{2}   \right)\label{warpedads}.
+\end{equation}
+Note that in this case two spacetimes we consider are not even the
+solution of same theory. This time the Jacobian is the following
+\begin{eqnarray}
+  \frac{\partial x^{\alpha} }{\partial x^{\prime\mu} }=
+  \begin{pmatrix}
+    1 & 0 & 0 \\
+    0 & 1 & 0 \\
+    (\sqrt{K}-1)\sinh X & 0 & \sqrt{K}
+  \end{pmatrix}.
+\end{eqnarray}
+
 % \subsection{An Example of relativistic warped ads3}
 % In this section we will consider the transformation from Gibbons form
 % of GR solution to the Horava-type solution. We start with the Gibbons
