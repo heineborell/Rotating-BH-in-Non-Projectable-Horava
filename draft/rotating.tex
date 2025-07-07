@@ -174,7 +174,8 @@ The simplest example for our case comes from 3 dimensional gravity
 solution called $\text{WAdS}_{3}$ which is a deformation of
 $\text{AdS}_3$. The deformations can be squashing or streching of
 $\text{AdS}_3$. There are several representations of
-$\text{WAdS}_{3}$ and the one we use is from \cite{Giribet:2015lfa}.
+$\text{WAdS}_{3}$ and we will use the following simple form for our purposes
+the one we use is from \cite{Giribet:2015lfa}.
 \begin{equation}
   ds^{2}=\dfrac{l^{2}_K}{4}\left(-\cosh\x d\tau^{2}+dx^{2}+K(dy+\sinh
   x d\tau )^{2}   \right)\label{warpedads}
@@ -189,19 +190,31 @@ $\nu ^{2}>1$ is streched $\nu ^{2}<1$ are called squashed
 deformations of $AdS_3$.
 
 Moreover, unlike $AdS_3$, the warped versions are not solutions to
-Einstein gravity in 3 dimensions. To obtain them, one needs to couple matter or
-consider models like Topologically Massive Gravity (TMG) or New
-Massive Gravity (NMG) (higher order derivative theories).
-
-Now consider two coordinate systems with $(\tau,x,y)$ and $(T,X,Y)$.
-The transformation between them will take the the $AdS_3$ metric
+Einstein gravity in 3 dimensions. To obtain them, one needs to couple
+matter or consider models like Topologically Massive Gravity (TMG) or New
+Massive Gravity (NMG) (higher order derivative theories). For example
+(\ref{warpedads}) is a solution to TMG field equations
 \begin{equation}
-  ds^{2}=\frac{l^{2}}{4}\left(-\cosh\x d\tau^{2}+dx^{2}+(dy+\sinh
+  R_{\alpha\beta}+\frac{1}{\mu } C_{\alpha \beta }+\Lambda g_{\mu  \nu }=0
+\end{equation}
+with $C_{\mu \nu }$ being the Cotton tensor
+\begin{eqnarray}
+  C^{\sigma \rho }&=\varepsilon^{\alpha \beta (\sigma }\nabla_{\alpha
+  }R^{\rho) }{}_{\beta },\nonumber\\
+  \mu &=\dfrac{3\nu}{L},\quad\Lambda=-\dfrac{1}{L^{2} }
+\end{eqnarray}
+
+Now, for the transformation between $\nu =1$ and $\nu \neq 1$ case of
+(\ref{warpedads}), consider two coordinate systems with
+$(\tau,x,y)$ and $(T,X,Y)$. The transformation between them will take
+the the $AdS_3$ metric
+\begin{equation}
+  ds^{2}=\frac{l^{2}}{4}\left(-\cosh x d\tau^{2}+dx^{2}+(dy+\sinh
   x d\tau )^{2} \right),
 \end{equation}
 to the one given in (\ref{warpedads})
 \begin{equation}
-  ds^{2}=\dfrac{l^{2}_K}{4}\left(-\cosh\x dT^{2}+dX^{2}+K(dY+\sinh
+  ds^{2}=\dfrac{l^{2}_K}{4}\left(-\cosh X dT^{2}+dX^{2}+K(dY+\sinh
   X dT )^{2}   \right)\label{warpedads}.
 \end{equation}
 Note that in this case two spacetimes we consider are not even the
@@ -209,9 +222,10 @@ solution of same theory. This time the Jacobian is the following
 \begin{eqnarray}
   \frac{\partial x^{\alpha} }{\partial x^{\prime\mu} }=
   \begin{pmatrix}
-    1 & 0 & 0 \\
-    0 & 1 & 0 \\
-    (\sqrt{K}-1)\sinh X & 0 & \sqrt{K}
+    \sqrt{3+\nu ^{2} }/2 & 0 & 0 \\
+    0 & \sqrt{3+\nu ^{2} }/2  & 0 \\
+    (3+\nu ^{2}-2 \nu \sqrt{3+\nu ^{2} }  )\sinh X / 4 \nu  & 0 &
+    (3+\nu ^{2}) /4\nu
   \end{pmatrix}.
 \end{eqnarray}
 
