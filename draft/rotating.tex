@@ -144,8 +144,8 @@ with the components
 \end{eqnarray}
 This metric can be cast in Minkowski form under the following transformations
 \begin{eqnarray}
-  \Theta &=&\theta+Ft,\\
-  T &=&t-A\Theta.
+  \Theta &=&\theta+Ft,\label{tran1}\\
+  T &=&t-A\Theta. \label{tran2}
 \end{eqnarray}
 These transformations can be called illegitimate as the angular
 variable periodicity is not preserved. Next, we can write down the
@@ -157,7 +157,7 @@ $(t,r,\theta)\rightarrow (T,r,\Theta))$
     1 & 0 & A \\
     0 & 1 & 0 \\
     -F & 0 & (1-AF)
-  \end{pmatrix}.
+  \end{pmatrix}. \label{jacobflat}
 \end{eqnarray}
 For the sake of simplicity we only give the transformation for the $g_{TT}$ term
 \begin{eqnarray}
@@ -169,7 +169,7 @@ transformed metric is Minkowski
 \begin{equation}
   ds^{2}=-dT^{2}+ dr^{2}+r^{2}d\Theta^{2}.
 \end{equation}
-\section{Illegitimate non-holonomic transformations}
+\section{Illegitimate transformations (non-coordiante basis)}
 The simplest example for our case comes from 3 dimensional gravity
 solution called $\text{WAdS}_{3}$ which is a deformation of
 $\text{AdS}_3$. The deformations can be squashing or streching of
@@ -218,17 +218,49 @@ to the one given in (\ref{warpedads})
   X dT )^{2}   \right)\label{warpedads}.
 \end{equation}
 Note that in this case two spacetimes we consider are not even the
-solution of same theory. This time the Jacobian is the following
+solution of same theory. The Jacobian of transformation is given by
 \begin{eqnarray}
   \frac{\partial x^{\alpha} }{\partial x^{\prime\mu} }=
   \begin{pmatrix}
-    \sqrt{3+\nu ^{2} }/2 & 0 & 0 \\
-    0 & \sqrt{3+\nu ^{2} }/2  & 0 \\
-    (3+\nu ^{2}-2 \nu \sqrt{3+\nu ^{2} }  )\sinh X / 4 \nu  & 0 &
-    (3+\nu ^{2}) /4\nu
-  \end{pmatrix}.
+    \dfrac{2}{\sqrt{3+\nu ^{2} } } & 0 & 0 \\
+    0 & \dfrac{\sqrt{2}}{(3+\nu ^{2} ) ^{1 / 4}}    & 0 \\
+    -\frac{2(3+\nu ^{2}-2 \nu \sqrt{3+\nu ^{2} }  )}{(3+\nu ^{2} )
+    ^{3/2 }}\sinh \left(\frac{(3+\nu ^{2})^{1 / 4}}{\sqrt{2}}X\right)  & 0 &
+    \dfrac{4 \nu }{(3+\nu ^{2})}
+  \end{pmatrix}. \label{jacobwads}
 \end{eqnarray}
+The metric components are
+\begin{eqnarray}
+  g_{TT}&=&\left(\dfrac{\partial\tau}{\partial T}\right) ^{2} g_{\tau
+  \tau }+ 2 \dfrac{\partial \tau}{\partial T}\dfrac{\partial
+  y}{\partial T}g_{\tau y}+\left(\dfrac{\partial y}{\partial
+  T}\right)^{2} g_{yy},\\
+  g_{XX}&=& \left(\dfrac{\partial x}{\partial X}\right)^{2} g_{x x},\\
+  g_{TY}&=& \dfrac{\partial \tau}{\partial T}\dfrac{\partial
+  y}{\partial Y}g_{\tau y}+\dfrac{\partial y}{\partial
+  T}\dfrac{\partial y}{\partial Y}g_{yy},\\
+  g_{YY}&=&\left(\dfrac{\partial y}{\partial Y}\right)^{2}.
+\end{eqnarray}
+After this transformation we are close to the form want (\ref{warpedads}).
+The metric now reads
+\begin{eqnarray}
+  ds^{2}&=&-\dfrac{L ^{2} }{(\nu ^{2}+3)}\left(\cosh \left(\frac{(\nu
+    ^{2}+3)^{1 / 4}}{\sqrt{2}}X\right)^{2}-\dfrac{4 \nu ^{2} }{(\nu
+    ^{2}+ 3 )}\sinh \left(\frac{(3+\nu
+  ^{2})^{1 / 4}}{\sqrt{2}} X \right)^{2}  \right)dT^{2}\\
+  &+& \dfrac{L^{2} }{2\sqrt{\nu ^{2}+3 } }dX^{2}+\dfrac{4 L^{2} \nu
+  ^{2} }{(\nu ^{2}+3 )^{2} }dY^{2}+\drac{8L^{2}\nu ^{2}\sinh \left(\frac{(3+\nu
+  ^{2})^{1 / 4}}{\sqrt{2}} X \right)  }dT dY.
+\end{eqnarray}
+With a final scaling $dX=\sqrt{2} d\bar X / (\nu ^{2}+3 )^{1 / 4} $
+we have the $\text{WAdS}_{3}$ in the form of (\ref{warpedads}).
 
+The Jacobian (\ref{jacobwads}) of the transformation has a non-zero
+determinant so its a locally valid coordinate transformation. However,
+unlike the first example (\ref{jacobflat}) the differentials defined
+by each row is not exact i.e. it is not possible to write all transformations as
+functions in (\ref{tran1}), (\ref{tran2}). So this type of
+transformations seems like more general than the illegitimate ones.
 % \subsection{An Example of relativistic warped ads3}
 % In this section we will consider the transformation from Gibbons form
 % of GR solution to the Horava-type solution. We start with the Gibbons
