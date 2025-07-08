@@ -3,3 +3,10 @@
 #For MAC files
 **.DS_Store
 *.pdf
+
+# Latex
+*.synctex.gz
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
