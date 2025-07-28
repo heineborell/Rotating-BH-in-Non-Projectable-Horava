@@ -263,93 +263,94 @@ unlike the first example (\ref{jacobflat}) the differentials defined
 by each row is not exact i.e. it is not possible to write all transformations as
 functions in (\ref{tran1}), (\ref{tran2}). So this type of
 transformations seems like more general than the illegitimate ones.
-% \subsection{An Example of relativistic warped ads3}
-% In this section we will consider the transformation from Gibbons form
-% of GR solution to the Horava-type solution. We start with the Gibbons
-% solution given in \cite{Gibb:2004} (with $\lambda = 0$)
-% \begin{eqnarray}
-%   ds^{2} &= & \left(  -1+\left(\frac{2Mr}{a^{2}+r^{2}-a^{2}\mu ^{2}
-%   }\right)\right)dt^2
-%   -\frac{4aMr \mu^{2}}{a^{2}+r^{2}-a^2 \mu^2   }dt d
-%   \varphi+\frac{a^{2}+r^{2}-a^{2}\mu ^{2}    }{a^{2}-2Mr+r^{2}  }dr^2
-%   \nonumber\\
-%   & +& \left(a^{2} - \frac{r^{2}}{\mu ^{2}-1 } \right)d \theta ^{2}
-%   +\frac{a^2(a^2+r(r-2M))\mu ^{4}-(r^2+a^2)^2 \mu ^2}{a^2(\mu
-%   ^2-1)-r^2 }d \varphi ^2
-% \end{eqnarray}
-% Then we consider the following transformation with the unknown
-% function $H(r,\mu )$
-% \begin{eqnarray}
-%   d \tau  = dt,\quad dR=dr,\quad d \tilde \mu  = d \mu, \quad d
-%   \tilde \varphi -H(r,\mu )d \tau = d \varphi,
-% \end{eqnarray}
-% where $\tau ,R,\tilde \mu , \tilde \varphi $ are the new coordinates.
-% The new components of the metric
-% function can be found solving the following set
-% \begin{eqnarray}
-%   g_{t t}-2g_{t \varphi }H(r,\varphi )+g_{\varphi \varphi
-%   }H(r,\varphi )^{2}-g_{\tau \tau }&=&0,\\
-%   g_{t \varphi }-g_{\varphi  \varphi }-g_{\tau \tilde \varphi }&=&0,
-% \end{eqnarray}
-% in which the solution is given by (note that the rest of the
-% components does not transform)
-% \begin{eqnarray}
-%   g_{\tau \tau} &=& \frac{{\mu }^2 H \left(H
-%       \left(\left(a^2+r^2\right)^2-a^2 {\mu }^2 \left(a^2+r (r-2
-%     M)\right)\right)+4 a M r\right)+a^2 \left({\mu }^2-1\right)+r (2
-%   M-r)}{r^2-a^2 \left({\mu }^2-1\right)},\\
-%   g_{\tau \tilde\varphi} &=&\frac{\mu ^2 \left(H
-%       \left(\left(a^2+r^2\right)^2-a^2 \mu ^2 \left(a^2+r (r-2
-%   M)\right)\right)+2 a M r\right)}{a^2 \left(\mu ^2-1\right)-r^2}.
-% \end{eqnarray}
-% In terms of ADM variables this only introduces a change in shift function
-% \begin{eqnarray}
-%   N_{\phi} = \frac{\mu ^{2}(2aMr+((a^{2}+r^2 )^{2}-a^{2}(a^{2}+(r-2M)
-%   )\mu ^{2}   )H) }{a^{2}(\mu^{2}-1 ) r^{2} }.
-% \end{eqnarray}
-% Using the new metric components in Horava's equations we will have
-% PDEs for the function $H(r,\mu )$ which are discussed in mathematica files.
-%
-% \section{Hocava}
-%
-% \begin{\eq}
-%   S_g &= & \int_{{\bf R} \times \Si_t} dt d^3 x
-%   \sqrt{g}N\left[\frac{1}{\kappa}\left(K_{ij}K^{ij}-\lambda
-%   K^2\right)+\xi R^{}-2 \La+\f{\sigma}{2} a_i a^i \right]\ ,
-%   \label{horava}
+
+\subsection{Gibbons $AdS_3$ to Horava}
+In this section we will consider the transformation from Gibbons form
+of GR solution to the Horava-type solution. We start with the Gibbons
+solution given in \cite{Gibb:2004} (with $\lambda = 0$)
+\begin{eqnarray}
+  ds^{2} &= & \left(  -1+\left(\frac{2Mr}{a^{2}+r^{2}-a^{2}\mu ^{2}
+  }\right)\right)dt^2
+  -\frac{4aMr \mu^{2}}{a^{2}+r^{2}-a^2 \mu^2   }dt d
+  \varphi+\frac{a^{2}+r^{2}-a^{2}\mu ^{2}    }{a^{2}-2Mr+r^{2}  }dr^2
+  \nonumber\\
+  & +& \left(a^{2} - \frac{r^{2}}{\mu ^{2}-1 } \right)d \theta ^{2}
+  +\frac{a^2(a^2+r(r-2M))\mu ^{4}-(r^2+a^2)^2 \mu ^2}{a^2(\mu
+  ^2-1)-r^2 }d \varphi ^2
+\end{eqnarray}
+Then we consider the following transformation with the unknown
+function $H(r,\mu )$
+\begin{eqnarray}
+  d \tau  = dt,\quad dR=dr,\quad d \tilde \mu  = d \mu, \quad d
+  \tilde \varphi -H(r,\mu )d \tau = d \varphi,
+\end{eqnarray}
+where $\tau ,R,\tilde \mu , \tilde \varphi $ are the new coordinates.
+The new components of the metric
+function can be found solving the following set
+\begin{eqnarray}
+  g_{t t}-2g_{t \varphi }H(r,\varphi )+g_{\varphi \varphi
+  }H(r,\varphi )^{2}-g_{\tau \tau }&=&0,\\
+  g_{t \varphi }-g_{\varphi  \varphi }-g_{\tau \tilde \varphi }&=&0,
+\end{eqnarray}
+in which the solution is given by (note that the rest of the
+components does not transform)
+\begin{eqnarray}
+  g_{\tau \tau} &=& \frac{{\mu }^2 H \left(H
+      \left(\left(a^2+r^2\right)^2-a^2 {\mu }^2 \left(a^2+r (r-2
+    M)\right)\right)+4 a M r\right)+a^2 \left({\mu }^2-1\right)+r (2
+  M-r)}{r^2-a^2 \left({\mu }^2-1\right)},\\
+  g_{\tau \tilde\varphi} &=&\frac{\mu ^2 \left(H
+      \left(\left(a^2+r^2\right)^2-a^2 \mu ^2 \left(a^2+r (r-2
+  M)\right)\right)+2 a M r\right)}{a^2 \left(\mu ^2-1\right)-r^2}.
+\end{eqnarray}
+In terms of ADM variables this only introduces a change in shift function
+\begin{eqnarray}
+  N_{\phi} = \frac{\mu ^{2}(2aMr+((a^{2}+r^2 )^{2}-a^{2}(a^{2}+(r-2M)
+  )\mu ^{2}   )H) }{a^{2}(\mu^{2}-1 ) r^{2} }.
+\end{eqnarray}
+Using the new metric components in Horava's equations we will have
+PDEs for the function $H(r,\mu )$ which are discussed in mathematica files.
+
+\section{Hocava}
+
+\begin{\eq}
+  S_g &= & \int_{{\bf R} \times \Si_t} dt d^3 x
+  \sqrt{g}N\left[\frac{1}{\kappa}\left(K_{ij}K^{ij}-\lambda
+  K^2\right)+\xi R^{}-2 \La+\f{\sigma}{2} a_i a^i \right]\ ,
+  \label{horava}
+\end{\eq}
+where
+%\begin{\eq}
+$
+K_{ij}=({2N})^{-1}\left(\dot{g}_{ij}-\nabla_i
+N_j-\nabla_jN_i\right)
+$
 % \end{\eq}
-% where
-% %\begin{\eq}
-% $
-% K_{ij}=({2N})^{-1}\left(\dot{g}_{ij}-\nabla_i
-% N_j-\nabla_jN_i\right)
-% $
-% % \end{\eq}
-% is the extrinsic curvature [the overdot $(\dot{})$ denotes the time
-%   derivative and $\nabla_i$ is the covariant derivatives for the
-% induced metric $g_{ij}$ on the time-slicing hypersurface $\Si_t$] and
-% $R$ is the {\it three}-curvature in the ADM metric
-% \begin{\eq}
-%   \label{metric}
-%   ds^2=-N^2 c^2 dt^2+g_{ij}\left(dx^i+N^i dt\right)\left(dx^j+N^j
-%   dt\right),
-% \end{\eq}
-% respectively. (Hereafter, we shall use the unit $c=1$, unless
-% stated otherwise.)
-% The last term in the gravity action (\ref{horava}) is introduced for
-% completeness, with the proper acceleration $a_i=\nabla_i ln N$
-% \cite{Blas:2009}.
-%
-% \section*{Acknowledgments}
-%
-% Thanking part.
-%
-% \appendix
-%
-% \section{Explicit expressions of $\widehat{\rho}$ and $\widehat{p_a}$ in
-%   ${T^{\m}}_{\n (\it{eff})}$
-%   %the effective energy-momentum tensor components
-% }
+is the extrinsic curvature [the overdot $(\dot{})$ denotes the time
+  derivative and $\nabla_i$ is the covariant derivatives for the
+induced metric $g_{ij}$ on the time-slicing hypersurface $\Si_t$] and
+$R$ is the {\it three}-curvature in the ADM metric
+\begin{\eq}
+  \label{metric}
+  ds^2=-N^2 c^2 dt^2+g_{ij}\left(dx^i+N^i dt\right)\left(dx^j+N^j
+  dt\right),
+\end{\eq}
+respectively. (Hereafter, we shall use the unit $c=1$, unless
+stated otherwise.)
+The last term in the gravity action (\ref{horava}) is introduced for
+completeness, with the proper acceleration $a_i=\nabla_i ln N$
+\cite{Blas:2009}.
+
+\section*{Acknowledgments}
+
+Thanking part.
+
+\appendix
+
+\section{Explicit expressions of $\widehat{\rho}$ and $\widehat{p_a}$ in
+  ${T^{\m}}_{\n (\it{eff})}$
+  %the effective energy-momentum tensor components
+}
 
 %%%%%%%%%% References %%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\J}[4]{#1 {\bf #2} #3 (#4)}

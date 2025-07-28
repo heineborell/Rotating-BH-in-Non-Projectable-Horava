@@ -1,53 +1,67 @@
 \documentclass[preprint,aps,tightenlines,showkeys,nofootinbib,superscriptaddress,graphicx]{revtex4}
 \usepackage{latexsym}
 
-
 \begin{document}
 
-
 \section{Illegitimate transformations}
-In this section we will consider the transformation from Gibbons form of GR solution to the Horava-type solution. We start with the Gibbons solution given in \cite{Gibb:2004} (with $\lambda = 0$) 
+In this section we will consider the transformation from Gibbons form
+of GR solution to the Horava-type solution. We start with the Gibbons
+solution given in \cite{Gibb:2004} (with $\lambda = 0$)
 \begin{eqnarray}
-  ds^{2} &= & \left(  -1+\left(\frac{2Mr}{a^{2}+r^{2}-a^{2}\mu ^{2}     }\right)\right)dt^2
-  -\frac{4aMr \mu^{2}}{a^{2}+r^{2}-a^2 \mu^2   }dt d \varphi+\frac{a^{2}+r^{2}-a^{2}\mu ^{2}    }{a^{2}-2Mr+r^{2}  }dr^2 \nonumber\\
-           & +& \left(a^{2} - \frac{r^{2}}{\mu ^{2}-1 } \right)d \theta ^{2} 
-           +\frac{a^2(a^2+r(r-2M))\mu ^{4}-(r^2+a^2)^2 \mu ^2}{a^2(\mu ^2-1)-r^2 }d \varphi ^2 
+  ds^{2} &= & \left(  -1+\left(\frac{2Mr}{a^{2}+r^{2}-a^{2}\mu ^{2}
+  }\right)\right)dt^2
+  -\frac{4aMr \mu^{2}}{a^{2}+r^{2}-a^2 \mu^2   }dt d
+  \varphi+\frac{a^{2}+r^{2}-a^{2}\mu ^{2}    }{a^{2}-2Mr+r^{2}  }dr^2
+  \nonumber\\
+  & +& \left(a^{2} - \frac{r^{2}}{\mu ^{2}-1 } \right)d \theta ^{2}
+  +\frac{a^2(a^2+r(r-2M))\mu ^{4}-(r^2+a^2)^2 \mu ^2}{a^2(\mu
+  ^2-1)-r^2 }d \varphi ^2
 \end{eqnarray}
-Then we consider the following transformation with the unknown function $H(r,\mu )$
+Then we consider the following transformation with the unknown
+function $H(r,\mu )$
 \begin{eqnarray}
-  d \tau  = dt,\quad dR=dr,\quad d \tilde \mu  = d \mu, \quad d \tilde \varphi -H(r,\mu )d \tau = d \varphi, 
+  d \tau  = dt,\quad dR=dr,\quad d \tilde \mu  = d \mu, \quad d
+  \tilde \varphi -H(r,\mu )d \tau = d \varphi,
 \end{eqnarray}
-where $\tau ,R,\tilde \mu , \tilde \varphi $ are the new coordinates. The new components of the metric
+where $\tau ,R,\tilde \mu , \tilde \varphi $ are the new coordinates.
+The new components of the metric
 function can be found solving the following set
 \begin{eqnarray}
-  g_{t t}-2g_{t \varphi }H(r,\varphi )+g_{\varphi \varphi }H(r,\varphi )^{2}-g_{\tau \tau }&=&0,\\
+  g_{t t}-2g_{t \varphi }H(r,\varphi )+g_{\varphi \varphi
+  }H(r,\varphi )^{2}-g_{\tau \tau }&=&0,\\
   g_{t \varphi }-g_{\varphi  \varphi }-g_{\tau \tilde \varphi }&=&0,
 \end{eqnarray}
-in which the solution is given by (note that the rest of the components does not transform)
+in which the solution is given by (note that the rest of the
+components does not transform)
 \begin{eqnarray}
-  g_{\tau \tau} &=& \frac{{\mu }^2 H \left(H \left(\left(a^2+r^2\right)^2-a^2 {\mu }^2 \left(a^2+r (r-2 M)\right)\right)+4 a M r\right)+a^2 \left({\mu }^2-1\right)+r (2 M-r)}{r^2-a^2 \left({\mu }^2-1\right)},\\
-  g_{\tau \tilde\varphi} &=&\frac{\mu ^2 \left(H \left(\left(a^2+r^2\right)^2-a^2 \mu ^2 \left(a^2+r (r-2 M)\right)\right)+2 a M r\right)}{a^2 \left(\mu ^2-1\right)-r^2}. 
+  g_{\tau \tau} &=& \frac{{\mu }^2 H \left(H
+      \left(\left(a^2+r^2\right)^2-a^2 {\mu }^2 \left(a^2+r (r-2
+    M)\right)\right)+4 a M r\right)+a^2 \left({\mu }^2-1\right)+r (2
+  M-r)}{r^2-a^2 \left({\mu }^2-1\right)},\\
+  g_{\tau \tilde\varphi} &=&\frac{\mu ^2 \left(H
+      \left(\left(a^2+r^2\right)^2-a^2 \mu ^2 \left(a^2+r (r-2
+  M)\right)\right)+2 a M r\right)}{a^2 \left(\mu ^2-1\right)-r^2}.
 \end{eqnarray}
 In terms of ADM variables this only introduces a change in shift function
 \begin{eqnarray}
-  N_{\phi} = \frac{\mu ^{2}(2aMr+((a^{2}+r^2 )^{2}-a^{2}(a^{2}+(r-2M) )\mu ^{2}   )H) }{a^{2}(\mu^{2}-1 ) r^{2} }.
+  N_{\phi} = \frac{\mu ^{2}(2aMr+((a^{2}+r^2 )^{2}-a^{2}(a^{2}+(r-2M)
+  )\mu ^{2}   )H) }{a^{2}(\mu^{2}-1 ) r^{2} }.
 \end{eqnarray}
-Using the new metric components in Horava's equations we will have PDEs for the function $H(r,\mu )$ which are discussed in mathematica files.
+Using the new metric components in Horava's equations we will have
+PDEs for the function $H(r,\mu )$ which are discussed in mathematica files.
 \begin{thebibliography}{999}
-   %\cite{Gibbons:2004uw}
-\bibitem{Gibb:2004}
+  %\cite{Gibbons:2004uw}
+  \bibitem{Gibb:2004}
 
-
-G.~W.~Gibbons \textit{et al.},
-%H.~Lu, D.~N.~Page and C.~N.~Pope,
-%``The General Kerr-de Sitter metrics in all dimensions,''
-J. Geom. Phys. \textbf{53}, 49
-%-73
-(2005), Appendix {\bf E}.
-%doi:10.1016/j.geomphys.2004.05.001
-%[arXiv:hep-th/0404008 [hep-th]].
-%424 citations counted in INSPIRE as of 12 Jan 2024
-
+  G.~W.~Gibbons \textit{et al.},
+  %H.~Lu, D.~N.~Page and C.~N.~Pope,
+  ``The General Kerr-de Sitter metrics in all dimensions,''
+  J. Geom. Phys. \textbf{53}, 49
+  %-73
+  (2005), Appendix {\bf E}.
+  %doi:10.1016/j.geomphys.2004.05.001
+  %[arXiv:hep-th/0404008 [hep-th]].
+  %424 citations counted in INSPIRE as of 12 Jan 2024
 
 \end{thebibliography}
 
