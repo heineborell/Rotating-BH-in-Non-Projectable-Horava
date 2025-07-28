@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1751962584.7556 "rotating.tex" "rotating.pdf" "rotating" 1751962585.08794 2
+["pdflatex"] 1752037111.85217 "rotating.tex" "rotating.pdf" "rotating" 1752037112.18827 2
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -64,8 +64,8 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1750832837 5523539 cbe340ff87ac4cfddcdc6361a84e52ac ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1750832902 3599570 6ee182314de53cdb38892f0488378242 ""
   "/usr/local/texlive/2025/texmf.cnf" 1750832833.53512 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "rotating.aux" 1751962585.03565 1225 041a605b570290083b65da78ede4a7f8 "pdflatex"
-  "rotating.tex" 1751962582.83564 16496 a5c5dc6890e66a21d55b36bafca40394 ""
+  "rotating.aux" 1752037112.14096 1225 47ab83147da6e85d818917372b916952 "pdflatex"
+  "rotating.tex" 1752037110.66429 16410 e2f3c7103126743f869bed8dfe2d17e5 ""
   (generated)
   "rotating.aux"
   "rotating.log"

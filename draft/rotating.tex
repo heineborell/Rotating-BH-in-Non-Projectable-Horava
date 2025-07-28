@@ -134,7 +134,7 @@ transformation was used before in number of papers
 The easiest example we can discuss is from \cite{Deser:1985pk} where a
 stationary and axially symmetric metric is given by
 \begin{equation}
-  ds^{2}= dr^{2}+f^{2}(2)d \theta^{2}+2g_{02}(r)dt d\theta +g_{00}(r)dt^{2},
+  ds^{2}= dr^{2}+f^{2}(r)d \theta^{2}+2g_{02}(r)dt d\theta +g_{00}(r)dt^{2},
 \end{equation}
 with the components
 \begin{eqnarray}
@@ -169,13 +169,13 @@ transformed metric is Minkowski
 \begin{equation}
   ds^{2}=-dT^{2}+ dr^{2}+r^{2}d\Theta^{2}.
 \end{equation}
-\section{Illegitimate transformations (non-coordiante basis)}
+\section{Illegitimate transformations (non-coordinate basis)}
 The simplest example for our case comes from 3 dimensional gravity
 solution called $\text{WAdS}_{3}$ which is a deformation of
 $\text{AdS}_3$. The deformations can be squashing or streching of
 $\text{AdS}_3$. There are several representations of
-$\text{WAdS}_{3}$ and we will use the following simple form for our purposes
-the one we use is from \cite{Giribet:2015lfa}.
+$\text{WAdS}_{3}$ and we will use the following simple form
+\cite{Giribet:2015lfa}.
 \begin{equation}
   ds^{2}=\dfrac{l^{2}_K}{4}\left(-\cosh\x d\tau^{2}+dx^{2}+K(dy+\sinh
   x d\tau )^{2}   \right)\label{warpedads}
@@ -186,7 +186,7 @@ where we have introduced
   }{(\nu ^{2}+3 )},
 \end{eqnarray}
 $\nu =1$ corresponds to locally $AdS_3$ geometries and spaces with
-$\nu ^{2}>1$ is streched $\nu ^{2}<1$ are called squashed
+$\nu ^{2}>1$ is stretched $\nu ^{2}<1$ are called squashed
 deformations of $AdS_3$.
 
 Moreover, unlike $AdS_3$, the warped versions are not solutions to
@@ -195,7 +195,8 @@ matter or consider models like Topologically Massive Gravity (TMG) or New
 Massive Gravity (NMG) (higher order derivative theories). For example
 (\ref{warpedads}) is a solution to TMG field equations
 \begin{equation}
-  R_{\alpha\beta}+\frac{1}{\mu } C_{\alpha \beta }+\Lambda g_{\mu  \nu }=0
+  R_{\alpha\beta}-\frac{1}{2}R g_{\alpha\beta }+\Lambda g_{\alpha  \beta
+  }+\frac{1}{\mu } C_{\alpha \beta }=0
 \end{equation}
 with $C_{\mu \nu }$ being the Cotton tensor
 \begin{eqnarray}
@@ -249,8 +250,9 @@ The metric now reads
     ^{2}+ 3 )}\sinh \left(\frac{(3+\nu
   ^{2})^{1 / 4}}{\sqrt{2}} X \right)^{2}  \right)dT^{2}\\
   &+& \dfrac{L^{2} }{2\sqrt{\nu ^{2}+3 } }dX^{2}+\dfrac{4 L^{2} \nu
-  ^{2} }{(\nu ^{2}+3 )^{2} }dY^{2}+\drac{8L^{2}\nu ^{2}\sinh \left(\frac{(3+\nu
-  ^{2})^{1 / 4}}{\sqrt{2}} X \right)  }dT dY.
+  ^{2} }{(\nu ^{2}+3 )^{2} }dY^{2}+\dfrac{8L^{2}\nu ^{2}}{(\nu ^{2}+3
+  )^{2} }\sinh \left(\frac{(3+\nu
+^{2})^{1 / 4}}{\sqrt{2}} X \right)  }dT dY.
 \end{eqnarray}
 With a final scaling $dX=\sqrt{2} d\bar X / (\nu ^{2}+3 )^{1 / 4} $
 we have the $\text{WAdS}_{3}$ in the form of (\ref{warpedads}).
@@ -366,64 +368,64 @@ transformations seems like more general than the illegitimate ones.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{thebibliography}{999}
-  %\cite{Giribet:2015lfa}
-  \bibitem{Giribet:2015lfa}
-  G.~Giribet and M.~Tsoukalas,
-  %``Warped-AdS3 black holes with scalar halo,''
-  Phys. Rev. D \textbf{92}, no.6, 064027 (2015)
-  doi:10.1103/PhysRevD.92.064027
-  [arXiv:1506.05336 [gr-qc]].
-  %17 citations counted in INSPIRE as of 03 Jul 2025
-  %\cite{Deser:1983tn}
-  \bibitem{Deser:1983tn}
-  S.~Deser, R.~Jackiw and G.~'t Hooft,
-  %``Three-Dimensional Einstein Gravity: Dynamics of Flat Space,''
-  Annals Phys. \textbf{152}, 220 (1984)
-  doi:10.1016/0003-4916(84)90085-X
-  %1197 citations counted in INSPIRE as of 03 Jul 2025
-  %\cite{Deser:1985pk}
-  \bibitem{Deser:1985pk}
-  S.~Deser and P.~O.~Mazur,
-  %``Static Solutions in $D=3$ Einstein-maxwell Theory,''
-  Class. Quant. Grav. \textbf{2}, L51 (1985)
-  doi:10.1088/0264-9381/2/3/003
-  %46 citations counted in INSPIRE as of 03 Jul 2025
-  %\cite{Martinez:1999qi}
-  \bibitem{Martinez:1999qi}
-  C.~Martinez, C.~Teitelboim and J.~Zanelli,
-  %``Charged rotating black hole in three space-time dimensions,''
-  Phys. Rev. D \textbf{61}, 104013 (2000)
-  doi:10.1103/PhysRevD.61.104013
-  [arXiv:hep-th/9912259 [hep-th]].
-  %324 citations counted in INSPIRE as of 03 Jul 2025
+%\cite{Giribet:2015lfa}
+\bibitem{Giribet:2015lfa}
+G.~Giribet and M.~Tsoukalas,
+%``Warped-AdS3 black holes with scalar halo,''
+Phys. Rev. D \textbf{92}, no.6, 064027 (2015)
+doi:10.1103/PhysRevD.92.064027
+[arXiv:1506.05336 [gr-qc]].
+%17 citations counted in INSPIRE as of 03 Jul 2025
+%\cite{Deser:1983tn}
+\bibitem{Deser:1983tn}
+S.~Deser, R.~Jackiw and G.~'t Hooft,
+%``Three-Dimensional Einstein Gravity: Dynamics of Flat Space,''
+Annals Phys. \textbf{152}, 220 (1984)
+doi:10.1016/0003-4916(84)90085-X
+%1197 citations counted in INSPIRE as of 03 Jul 2025
+%\cite{Deser:1985pk}
+\bibitem{Deser:1985pk}
+S.~Deser and P.~O.~Mazur,
+%``Static Solutions in $D=3$ Einstein-maxwell Theory,''
+Class. Quant. Grav. \textbf{2}, L51 (1985)
+doi:10.1088/0264-9381/2/3/003
+%46 citations counted in INSPIRE as of 03 Jul 2025
+%\cite{Martinez:1999qi}
+\bibitem{Martinez:1999qi}
+C.~Martinez, C.~Teitelboim and J.~Zanelli,
+%``Charged rotating black hole in three space-time dimensions,''
+Phys. Rev. D \textbf{61}, 104013 (2000)
+doi:10.1103/PhysRevD.61.104013
+[arXiv:hep-th/9912259 [hep-th]].
+%324 citations counted in INSPIRE as of 03 Jul 2025
 
-  \bibitem{Kerr:1963}
-  R.~P.~Kerr,
-  %``Gravitational field of a spinning mass as an example of
-  % algebraically special metrics,''
-  Phys.\ Rev.\ Lett.\  {\bf 11}, 237 (1963).
-  % doi:10.1103/PhysRevLett.11.237
+\bibitem{Kerr:1963}
+R.~P.~Kerr,
+%``Gravitational field of a spinning mass as an example of
+% algebraically special metrics,''
+Phys.\ Rev.\ Lett.\  {\bf 11}, 237 (1963).
+% doi:10.1103/PhysRevLett.11.237
 
-  %\cite{Chandrasekhar:1985kt}
-  \bibitem{Chan:1985}
-  S.~Chandrasekhar,
-  ``The mathematical theory of black holes,'' (Oxford Univ.
-    %ersity
-  Press, 1983).
-  %348 citations counted in INSPIRE as of 12 Jan 2024
+%\cite{Chandrasekhar:1985kt}
+\bibitem{Chan:1985}
+S.~Chandrasekhar,
+``The mathematical theory of black holes,'' (Oxford Univ.
+  %ersity
+Press, 1983).
+%348 citations counted in INSPIRE as of 12 Jan 2024
 
-  %\cite{Gibbons:2004uw}
-  \bibitem{Gibb:2004}
+%\cite{Gibbons:2004uw}
+\bibitem{Gibb:2004}
 
-  G.~W.~Gibbons \textit{et al.},
-  %H.~Lu, D.~N.~Page and C.~N.~Pope,
-  %``The General Kerr-de Sitter metrics in all dimensions,''
-  J. Geom. Phys. \textbf{53}, 49
-  %-73
-  (2005), Appendix {\bf E}.
-  %doi:10.1016/j.geomphys.2004.05.001
-  %[arXiv:hep-th/0404008 [hep-th]].
-  %424 citations counted in INSPIRE as of 12 Jan 2024
+G.~W.~Gibbons \textit{et al.},
+%H.~Lu, D.~N.~Page and C.~N.~Pope,
+%``The General Kerr-de Sitter metrics in all dimensions,''
+J. Geom. Phys. \textbf{53}, 49
+%-73
+(2005), Appendix {\bf E}.
+%doi:10.1016/j.geomphys.2004.05.001
+%[arXiv:hep-th/0404008 [hep-th]].
+%424 citations counted in INSPIRE as of 12 Jan 2024
 
 \end{thebibliography}
 
